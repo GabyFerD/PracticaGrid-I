@@ -45,7 +45,7 @@ body {
 }
 .text {
   font-family: var(--font-family1);
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--color8);
 }
 
@@ -60,12 +60,26 @@ body {
 }
 
 .position {
+  height: 300px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  /* justify-items: center;
-  align-items: center; */
+  /* align-items: center;
+  justify-items: start; */
   /* shorthand */
-  place-items: center;
+  place-items: center start;
   gap: 10px;
+}
+
+.positionjyacontent {
+  height: 500px;
+  /* se debe agregar altura, mas grande que el contenido para que funcione align-content */
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 10px;
+  /*align-content: center;
+  justify-content: space-between; */
+  /* shorthand */
+  place-content: center space-between;
 }
