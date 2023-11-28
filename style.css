@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Josefin+Sans:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color1: #000000;
+  --color2: #585353;
+  --color3: #ffffff;
+  --color4: #953298;
+  --color5: #487569;
+  --color6: #1fc3cf;
+  --color7: #86ed07;
+  --color8: #78234c;
+  --font-family1: "DM Sans", sans-serif;
+  --font-family2: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color1);
+  color: var(--color3);
+  padding: 40px;
+}
+
+.container {
+  background-color: var(--color2);
+  font-family: var(--font-family1);
+  font-size: 1rem;
+  padding: 3rem;
+
+  border-radius: 8px;
+}
+
+.title {
+  font-family: var(--font-family2);
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-family: var(--font-family1);
+  font-size: 2.5rem;
+}
+.text {
+  font-family: var(--font-family1);
+  font-size: 1rem;
+  color: var(--color8);
+}
+
+.item {
+  background-color: var(--color4);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item:nth-child(even) {
+  background-color: var(--color5);
+}
+
+.position {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-items: center;
+  align-items: center; */
+  /* shorthand */
+  place-items: center;
+  gap: 10px;
+}
