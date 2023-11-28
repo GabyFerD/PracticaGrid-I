@@ -83,3 +83,8 @@ body {
   /* shorthand */
   place-content: center space-between;
 }
+
+.grid-auto {
+  display: grid;
+  grid-auto-flow: column;
+}
